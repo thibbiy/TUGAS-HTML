@@ -1,0 +1,7 @@
+.profile-siswa{
+    width: 400px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px auto;
+}
