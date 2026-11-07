@@ -4,5 +4,13 @@ h2{
 }
 p{
     color:beige;
-    background: blueviolet;
+    background: rgb(180, 129, 228);
+}
+.highlight{
+    text-align: center;
+    color:maroon;
+}
+#judul-hal{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:violet;
 }

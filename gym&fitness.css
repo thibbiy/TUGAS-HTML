@@ -1,0 +1,654 @@
+/* =========================================
+   ELEMENT SELECTOR
+========================================= */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b0b0b;
+    color: white;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+
+/* =========================================
+   GROUP SELECTOR
+========================================= */
+
+h1, h2, h3, p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+header {
+    background-color: #080808;
+    border-bottom: 1px solid #222;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu  {
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.logo span,
+.footer-logo span {
+    color: #ff5500;
+}
+
+
+/* =========================================
+   CHILD SELECTOR
+========================================= */
+
+.nav-menu > li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+
+/* =========================================
+   DESCENDANT SELECTOR
+========================================= */
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   PSEUDO CLASS :HOVER
+========================================= */
+
+.nav-menu li a:hover {
+    color: #82604f;
+}
+
+.join-btn:hover {
+    background-color: rgb(216, 83, 26);
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-outline:hover {
+    background-color: #ff5500;
+    border-color: #1a32bb;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    border-color: #f95524;
+}
+
+.program-card a:hover {
+    color: rgb(207, 29, 159);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.join-btn {
+    background-color: #ff5500;
+    color: white;
+
+    padding: 13px 25px;
+
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   ID SELECTOR
+========================================= */
+
+#home {
+    min-height: 600px;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 600px;
+}
+
+.hero-content {
+    width: 50%;
+    padding-right: 40px;
+}
+
+.orange-text {
+    color: #ff5500;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #ff5500;
+    display: block;
+}
+
+.description {
+    color: #aaa;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+
+/* =========================================
+   DISPLAY
+========================================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-left: 30px 0;
+}
+
+.btn-primary,
+.btn-outline {
+    padding: 15px 25px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #ff5500;
+    color: white;
+}
+
+.btn-outline {
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.hero-image {
+    width: 50%;
+    height: 600px;
+
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features {
+    display: flex;
+    gap: 30px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature span {
+    font-size: 25px;
+}
+
+.feature b,
+.feature small {
+    display: block;
+}
+
+.feature small {
+    color: #aaa;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+    display: flex;
+
+    background-color: #151515;
+
+    min-height: 500px;
+}
+
+.about-image {
+    width: 45%;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-content {
+    width: 55%;
+    padding: 70px;
+
+    box-sizing: border-box;
+}
+
+.about-content h2 {
+    font-size: 40px;
+}
+
+.about-content h2 span {
+    color: #ff5500;
+}
+
+.about-content > p {
+    color: #aaa;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+
+/* =========================================
+   ABOUT FEATURES
+========================================= */
+
+.about-features {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.about-features > div {
+    flex: 1;
+}
+
+.about-features strong {
+    font-size: 30px;
+}
+
+.about-features h3 {
+    font-size: 15px;
+}
+
+.about-features p {
+    color: #888;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   PROGRAM
+========================================= */
+
+.program {
+    padding: 80px 5%;
+    background-color: #f2f2f2;
+    color: #111;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+}
+
+.section-title h2 span {
+    color: #ff5500;
+}
+
+
+/* =========================================
+   BOX MODEL
+========================================= */
+
+.program-container {
+    display: flex;
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.program-card {
+    flex: 1;
+
+    background-color: #111;
+
+    border: 2px solid #222;
+
+    box-sizing: border-box;
+
+    transition: 0.3s;
+
+    overflow: hidden;
+}
+
+.program-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    color: white;
+}
+
+.card-content p {
+    color: #aaa;
+    line-height: 1.5;
+}
+
+.card-content a {
+    color: #ff5500;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #090909;
+
+    padding: 45px 5%;
+
+    text-align: center;
+}
+
+.stat h2 {
+    color: #ff5500;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    color: #aaa;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.cta {
+    display: flex;
+    align-items: center;
+
+    background-color: #171717;
+
+    min-height: 400px;
+}
+
+.cta-content {
+    width: 50%;
+    padding: 60px 7%;
+    box-sizing: border-box;
+}
+
+.cta-content h2 {
+    font-size: 42px;
+}
+
+.cta-content h2 span {
+    color: #ff5500;
+    display: block;
+}
+
+.cta-content > p:not(.orange-text) {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.cta button {
+    background-color: #ff5500;
+    color: white;
+
+    border: none;
+
+    padding: 15px 35px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.cta button:hover {
+    background-color: white;
+    color: black;
+}
+
+.cta-image {
+    width: 50%;
+    height: 400px;
+}
+
+.cta-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    background-color: #050505;
+
+    padding: 60px 7%;
+
+    position: relative;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-logo {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.footer-column p {
+    color: #777;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer-column h3 {
+    color: #ff5500;
+    font-size: 14px;
+}
+
+.footer-column a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: #ff5500;
+}
+
+.copyright {
+    width: 100%;
+
+    border-top: 1px solid #222;
+
+    padding-top: 25px;
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-content {
+        padding-right: 0;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+        height: 450px;
+    }
+
+    .features {
+        flex-wrap: wrap;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image {
+        height: 400px;
+    }
+
+    .about-content {
+        padding: 40px 7%;
+    }
+
+    .about-features {
+        flex-direction: column;
+    }
+
+    .program-container {
+        flex-direction: column;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cta {
+        flex-direction: column;
+    }
+
+    .cta-content,
+    .cta-image {
+        width: 100%;
+    }
+
+}
